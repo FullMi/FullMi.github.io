@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ANIME OTAKU - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body {
+            background-color: #1c1c1e;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #4db8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff4d4d;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #4db8ff;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .banner {
+            margin-top: 70px; 
+            width: 100%;
+            height: 400px;
+            background-image: url('DDDD.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .banner h2 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #4db8ff;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            background-color: #2c2c2e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 240px;
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ANIME OTAKU</h1>
+        <nav>
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="anime.html">Animes</a></li>
+                <li><a href="populaires.html">Populaires</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Animes Populaires</h2>
+    </section>
+
+    <main>
+        <section>
+            <h2 class="section-title">Animes Récemment Ajoutés</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="Demon-slave--1-kurokawa.webp" alt="Demon Slave">
+                    <div class="card-content">
+                        <h3>Demon Slave</h3>
+                        <p>Épisode 1</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="kny.jpg" alt="Demon slayer">
+                    <div class="card-content">
+                        <h3>Demon slayer</h3>
+                        <p>Épisode 5</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="solo leveling.jpg" alt="Solo leveling">
+                    <div class="card-content">
+                        <h3>Solo leveling</h3>
+                        <p>Épisode 10</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ranma concept.webp" alt="Ranma">
+                    <div class="card-content">
+                        <h3>Ranma 1/2</h3>
+                        <p>Épisode 7</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Catégories Populaires</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="JJK.webp" alt="JJK">
+                    <div class="card-content">
+                        <h3>Shonen</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="mushoku.avif" alt="Anime Thumbnail">
+                    <div class="card-content">
+                        <h3>Isekai</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="bersek.png" alt="Anime Thumbnail">
+                    <div class="card-content">
+                        <h3>Romance</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="naruto.jpg" alt="Anime Thumbnail">
+                    <div class="card-content">
+                        <h3>Action</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ANIME OTAKU. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
